@@ -1,5 +1,6 @@
-{-# LANGUAGE OverloadedStrings #-}module TextFractions where
-  
+{-# LANGUAGE OverloadedStrings #-}
+module TextFractions where
+
 import Control.Applicative
 import Data.Ratio ((%))
 import Text.Trifecta
