@@ -1,12 +1,13 @@
 import Text.Trifecta
 
-
 stop :: Parser a
 stop = unexpected "stop"
 
-
 -- read a single character '1'
-one = char '1'-- read a single character '1', then die-- equivalent to char '1' >> stop
+one = char '1'
+
+-- read a single character '1', then die
+-- equivalent to char '1' >> stop
 
 one' = one >> stop
 -- read two characters, '1', and '2'
