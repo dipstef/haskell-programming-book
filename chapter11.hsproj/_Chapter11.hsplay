@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+let stefano = MkPerson "Stefano" 35
+
+namae stefano
+
+let stefano' = Person' "Stefano" 35
+
+name stefano'
+age stefano'

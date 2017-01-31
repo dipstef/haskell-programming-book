@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+
+quickCheck (monoidAssoc :: S -> S -> S -> B)
+
+verboseCheck monoidAssoc
+
+quickCheck (monoidRightIdentity :: String -> Bool)
+
+quickCheck (monoidAssoc :: BullMappend)quickCheck (monoidLeftIdentity :: Bull -> Bool)quickCheck (monoidRightIdentity :: Bull -> Bool)

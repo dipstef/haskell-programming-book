@@ -1,0 +1,19 @@
+-- Haskell Playground 1.0
+let fifteen = 15
+let fifteenInt = fifteen :: Int
+let fifteenDouble = fifteen :: Double
+
+fifteenInt + fifteenInt
+fifteenDouble + fifteenDouble
+
+fifteenDouble + fifteen
+fifteenInt + fifteen
+
+-- We can’t add those two values because their types are no longer polymorphic, and their concrete types are different so they have different definitions of how to implement addition
+fifteenDouble + fifteenInt
+
+
+let triple1 x = x * 3 :: Integer
+
+
+let x = 5 + 5 :: String

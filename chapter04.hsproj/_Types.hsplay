@@ -1,0 +1,33 @@
+-- Haskell Playground 1.0
+Blah
+Woot
+
+changeMood Blah
+changeMood Woot
+
+import GHC.Int
+
+127 :: Int8
+128 :: Int8
+
+minBound :: Int8
+maxBound :: Int8
+
+minBound :: Int16
+maxBound :: Int16
+
+minBound :: Int32
+maxBound :: Int32
+
+minBound :: Int64
+maxBound :: Int64
+
+
+if True then "Truthin'" else "Falsin'"
+if False then "Truthin'" else "Falsin'""Falsin'"
+
+let x=0
+
+if (x + 1 == 1) then "AWESOME" else "wut"
+if (0 + 1 == 1) then "AWESOME" else "wut"if (1 == 1) then "AWESOME" else "wut"
+if True then "AWESOME" else "wut"

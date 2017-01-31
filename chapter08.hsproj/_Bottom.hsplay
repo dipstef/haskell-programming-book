@@ -1,0 +1,11 @@
+-- Haskell Playground 1.0
+raiseError False
+raiseError True
+
+partialF False
+partialF True
+
+partialF' True
+
+maybeF True
+

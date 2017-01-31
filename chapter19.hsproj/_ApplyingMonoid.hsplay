@@ -1,0 +1,13 @@
+-- Haskell Playground 1.0
+import qualified Data.Map as M
+import Data.Monoid
+
+let f = M.fromList [('a', 1)]
+let g = M.fromList [('b', 2)]
+
+f <> g
+mappend f g
+f `mappend` g
+
+
+M.fromList [('a', 1)] <> M.fromList [('a', 2)]

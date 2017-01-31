@@ -1,0 +1,16 @@
+-- Haskell Playground 1.0
+Trivial' == Trivial'
+
+Mon == Mon
+Mon == Tue
+
+Date Mon 01 == Date Mon 01
+Date Mon 01 == Date Tue 02
+
+
+Identity 2 == Identity 2
+Identity 2 == Identity 3
+Identity 2 /= Identity 3
+
+
+Identity (Date Mon 01) == Identity (Date Mon 01)

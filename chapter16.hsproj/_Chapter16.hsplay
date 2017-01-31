@@ -1,0 +1,72 @@
+-- Haskell Playground 1.0
+fmap (+1) (Just 1)
+
+fmap (10/) (4, 5)
+
+fmap (++ ", Esq.") (Right "Chris Allen")
+
+fmap (\a -> a) FixMe
+fmap (+1) (Pls 2)
+
+
+fmap id ItDoesnt
+
+let oneWhoKnocks = Heisenberg 0 "Uncle"
+
+let f = (++" Jesse")
+let g = (++" lol")
+
+fmap (f . g) oneWhoKnocks
+fmap f . fmap g $ oneWhoKnocks
+
+
+replaceWithP 10000
+replaceWithP "woohoo"
+replaceWithP (Just 10)
+
+fmap replaceWithP (Just 10)
+fmap replaceWithP Nothing
+
+
+fmap replaceWithP [1, 2, 3, 4, 5]
+fmap replaceWithP "Ave"
+
+fmap (+1) []
+fmap replaceWithP []
+
+fmap replaceWithP (10, 20)
+fmap replaceWithP (10, "woo")
+
+let tossEmOne = fmap (+1) negate
+
+tossEmOne 10
+tossEmOne (-10)
+
+let tossEmOne' = (+1) . negate
+
+tossEmOne' 10
+tossEmOne' (-10)
+
+
+let lms = [Just "Ave", Nothing, Just "woohoo"]
+replaceWithP lms
+fmap replaceWithP lms
+
+(fmap . fmap) replaceWithP lms
+(fmap . fmap . fmap) replaceWithP lms
+let ha = Just ["Ha", "Ha"]
+let lmls = [ha, Nothing, Just []]
+
+(fmap . fmap) replaceWithP lmls
+(fmap . fmap . fmap) replaceWithP lmls
+(fmap . fmap . fmap . fmap) replaceWithP lmls
+
+Constant 2
+
+const 2 (getConstant (Constant 3))
+fmap (const 2) (Constant 3)
+
+getConstant (id (Constant 3))
+
+fmap (+1) (Wrap (Just 1))
+fmap (+1) (Wrap [1, 2, 3])

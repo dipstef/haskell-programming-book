@@ -1,0 +1,15 @@
+name: chapter08
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 7.10.3-5.18-1
+x-last-ide-version: HfM1.3.0
+Executable chapter08
+  main-is: Recursion.hs
+  buildable: True
+  build-depends:
+      base -any
+  other-modules:
+      Bottom

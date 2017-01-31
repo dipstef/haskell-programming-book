@@ -1,0 +1,26 @@
+-- Haskell Playground 1.0
+foldr' (+) 0 [1, 2, 3]
+
+
+foldr' (+) 0 (take 4 [1, 2, 3, 4, undefined])foldr' (^) 2 [1..3]
+foldl' (^) 2 [1..3]
+
+let pab = ["Pizza", "Apple", "Banana"]
+
+foldr (\ a b -> take 3 a) "" pab
+foldl (\ b a -> take 3 a) "" pab
+
+concat $ map (take 3) pab
+concat $ map (take 3) (reverse pab)
+
+foldr (\ a b -> take 3 a ++ b) "" pab
+foldl (\ b a -> take 3 a ++ b) "" pab
+
+
+scanr (+) 0 [1..3]
+scanl (+) 0 [1..3]
+
+scanl' (+) 0 [1..3]
+
+take 10 fibs
+fibsN 9

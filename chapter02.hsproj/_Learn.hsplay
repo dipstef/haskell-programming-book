@@ -1,0 +1,73 @@
+-- Haskell Playground 1.0
+x
+y
+myResult
+
+1/1
+
+-- integral division rounds down
+div 1 1
+-- like rem but after modular division
+mod 1 1
+-- integral division rounds towards zero
+quot 1 1
+-- remainder after division
+rem 1 1
+
+-- rounds down
+div 20 (-6)
+20 `div` (-6)
+
+-- rounds towards zero
+quot 20 (-6)
+
+-- Laws
+(quot x y)*y + (rem x y) == x
+(div x y)* y + (mod x y) == x
+
+mod 15 2
+mod 21 12
+mod 3 12
+
+mod 15 2 == rem 15 2
+mod 21 12 == rem 21 12
+mod 3 12 == rem 3 12
+
+mod (1 + 23) 7
+mod (6 + 5)  7
+rem (1 + 23) 7
+
+-- they differ
+mod (3 - 12) 7
+rem (3 - 12) 7
+
+-- mod in Haskell has the same sign of the divisor --
+mod (-9) 7
+rem (-9) 7
+
+(-5) `mod` 2
+5 `mod` (-2)
+(-5) `mod` (-2)
+
+(-5) `rem` 2
+5 `rem` (-2)
+(-5) `rem` (-2)
+
+
+-- The ($) operator is a convenience for when you want to express something with fewer pairs of parentheses
+(2^) (2 + 2) 
+(2^) $ 2 + 2
+
+(2^) $ (+2) $ 3*2
+((2^) $ (+2) $ 3*2) == 2 ^ 8
+
+2 + 2 $ (*30)
+2 + 2 $ (*30)(2 + 2) (*30)
+4 (*30)
+
+-- must evaluate right-side first(2^) $ (*30) $ 2 + 2
+-- application of the function (*30) to the expression (2 + 2) forces evaluation 
+(2^) $ (*30) 4
+ -- then we reduce (*30) 4(2^) $ 120-- reduce ($) again.(2^) 120
+
+

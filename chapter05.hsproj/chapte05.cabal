@@ -1,0 +1,18 @@
+name: chapte05
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 7.10.3-5.18-1
+x-last-ide-version: HfM1.3.0
+Executable chapte05
+  main-is: Types.hs
+  buildable: True
+  build-depends:
+      base -any
+  other-modules:
+      Currying
+      TypeInference2
+      Polymorphism
+      TypeInference1

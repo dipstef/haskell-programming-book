@@ -1,0 +1,27 @@
+-- Haskell Playground 1.0
+import System.Random
+
+mkStdGen 0
+
+let sg = mkStdGen 0
+next sg
+next sg
+
+snd (next sg)
+let newSg = snd (next sg)
+
+next newSg
+next (snd (next newSg))
+
+random newSg :: (Int, StdGen)
+random newSg :: (Double, StdGen)
+
+
+randomR (0, 3) newSg :: (Int, StdGen)
+randomR (0, 3) newSg :: (Double, StdGen)
+
+let sg3 = randomR (0, 3) newSg :: (Int, StdGen)
+
+let rx :: (Int, StdGen); rx = random (snd sg3)
+rx
+snd rx

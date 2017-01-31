@@ -1,0 +1,13 @@
+-- Haskell Playground 1.0
+funcY 0
+
+funcZ 0
+
+pal "abba"
+pal' "abba"
+
+greetIfCool "downright frosty yo"  
+
+greetIfCool "foo"
+
+  

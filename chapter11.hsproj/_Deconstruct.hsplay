@@ -1,0 +1,7 @@
+-- Haskell Playground 1.0
+make Null
+
+-- How do we fix this? whenever we have a product that uses record accessors, keep it separate of any sum type that is wrapping it. To do this, split out the product into an independent type with its own type constructor instead of only as an inline data constructor product ---
+
+
+make' Null'

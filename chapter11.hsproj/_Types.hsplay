@@ -1,0 +1,13 @@
+-- Haskell Playground 1.0
+let bess = First (CowInfo "Bess" 4) :: Animal'
+
+-- Getting it rightlet elmer' = Second (SheepInfo "Elmer" 5 5)let elmer = Second elmer' :: Animal'-- Making a mistakelet elmo' = Second (SheepInfo "Elmo" 5 5)let elmo = First elmo' :: Animal'
+
+
+let myRecord = RecordProduct { pfirst = 42 , psecond = 0.00001 }
+
+let nineToFive = Programmer { os = Mac, lang = Haskell }-- We can reorder stuff when we use record syntaxlet feelingWizardly = Programmer { lang = Agda, os = GnuPlusLinux}
+
+let partialAf = Programmer {os = GnuPlusLinux}
+
+partialAf

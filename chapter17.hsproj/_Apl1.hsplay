@@ -1,0 +1,2 @@
+-- Haskell Playground 1.0
+quickBatch $ monoid (ZipList [1 :: Sum Int])

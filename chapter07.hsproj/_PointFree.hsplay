@@ -1,0 +1,28 @@
+-- Haskell Playground 1.0
+let f = negate . sum
+
+f [1..5]
+
+foldr1' 0 [1..5]
+
+let f = foldr (+)
+
+f 0 [1..5]
+
+let f = length . filter (== 'a')
+
+f "abracadabra"
+
+
+add 1 0
+addOne 0
+addOnePF 0
+  
+(addOne . addOne) 0
+(addOnePF . addOne) 0
+(addOne . addOnePF) 0
+(addOnePF . addOnePF) 0
+
+negate (addOne 0)
+(negate . addOne) 0
+(addOne . addOne . addOne . negate . addOne) 0

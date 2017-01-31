@@ -1,0 +1,12 @@
+-- Haskell Playground 1.0
+let spa' = some parseAssignment'
+let s = "key=value\nblah=123"
+
+parseString spa' mempty s
+
+parseByteString parseSection mempty sectionEx
+parseByteString parseIni mempty sectionEx
+
+parseByteString parseSection mempty sectionEx
+
+main

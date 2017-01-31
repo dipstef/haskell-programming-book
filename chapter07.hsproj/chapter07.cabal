@@ -1,0 +1,20 @@
+name: chapter07
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 7.10.3-5.18-1
+x-last-ide-version: HfM1.3.0
+Executable chapter07
+  main-is: Lambdas.hs
+  buildable: True
+  build-depends:
+      base -any
+  other-modules:
+      CaseExpression
+      Guards
+      FunctionComposition
+      PatternMatching
+      HighOrderFunctions
+      PointFree

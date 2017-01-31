@@ -1,0 +1,18 @@
+-- Haskell Playground 1.0
+(,) 8 10
+(,) 8 "Julie"
+(,) True 'c'
+
+-- Tuple is a product type, not a sum type. A product type represents a logical conjunction: you must supply both arguments to produce a value.
+
+(,) 9let myTup = (1 :: Integer, "blah")
+
+fst myTup
+snd myTup
+
+import Data.Tuple
+swap myTup
+
+let myTup2 = (1,2,3,4,5)
+
+

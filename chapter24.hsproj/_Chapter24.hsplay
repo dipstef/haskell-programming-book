@@ -1,0 +1,46 @@
+-- Haskell Playground 1.0
+import Control.Monad
+import Control.Monad.Trans.State
+
+runStateT (put 8) 7
+runStateT get 8
+
+runStateT (put 1 >> get) 8
+(runStateT $ put 1 >> get) 0
+
+
+(runStateT $ put 2 >> get) 10021490234890
+
+(runStateT $ put 2 >> return 9001) 0
+
+(runStateT $ put 2 >> return 9001) 0
+
+main
+
+let gimmeA = char 'a'
+
+
+parseString gimmeA mempty :: String -> Result Char
+parseString gimmeA mempty "a"
+parseString gimmeA mempty "b"
+
+
+parseString (char 'b') mempty "b"
+parseString (char 'b' >> char 'c') mempty "b"
+
+parseString (char 'b' >> char 'c') mempty "bc"
+parseString (char 'b' >> char 'c') mempty "abc"
+
+parseString (string "abc") mempty "abc"
+parseString (string "abc") mempty "bc"
+parseString (string "abc") mempty "ab"
+
+
+parseString (char 'a') mempty "abcdef"
+parseString (char 'a' >> stop) mempty "abcdef"
+
+parseString (string "abc") mempty "abcdef"
+parseString (string "abc" >> stop) mempty "abcdef"
+
+
+

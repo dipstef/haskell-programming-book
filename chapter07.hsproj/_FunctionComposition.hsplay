@@ -1,0 +1,23 @@
+-- Haskell Playground 1.0
+-- $ has a lower precedence than an ordinary function call (white space, usually). By using the $ we signal that application to the arguments should happen after the functions are already composed. --
+negate . sum $ [1..5]
+
+-- Because function application has a higher precedence than the composition operator, that function application would happen before the two functions composed --
+negate . sum [1..5]
+
+-- We can also parenthesize it instead of using the $ operator --
+(negate . sum) [1..5]
+
+
+negate (sum [1, 2, 3, 4, 5])
+
+sum (map negate [1..5])
+
+take 5 . reverse $ [1..10]
+
+take 5 (enumFrom 3)
+
+take 5 . enumFrom $ 3
+
+print' 2
+

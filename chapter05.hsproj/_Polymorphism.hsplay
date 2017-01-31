@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+-- length isn’t polymorphic enough. Fractional includes several types of numbers, but Int isn’t one of them, and that’s all length can return
+6 / length [1,2,3]
+
+6 / fromIntegral (length [1, 2, 3])
+ 
+
+
+

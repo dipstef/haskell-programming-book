@@ -1,0 +1,16 @@
+-- Haskell Playground 1.0
+factorial 1000
+
+let three = inc . inc . inc $ 0
+
+three
+
+incTimes 10 1
+
+
+applyTimes 10 inc 1
+applyTimes 10 inc 1
+
+fibonacci 10
+
+dividedBy 10 2

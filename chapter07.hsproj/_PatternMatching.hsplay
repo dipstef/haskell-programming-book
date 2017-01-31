@@ -1,0 +1,33 @@
+-- Haskell Playground 1.0
+printUser UnregisteredUser
+
+let dipstef = RegisteredUser (Username "dipstef") (AccountNumber 1)
+
+printUser dipstef
+
+let humboldt = Peng SouthAmericalet gentoo = Peng Antarcticalet macaroni = Peng Antarcticalet little = Peng Australialet galapagos = Peng Galapagos
+
+giveMeWhereTheyLive humboldt
+giveMeWhereTheyLive gentoo
+giveMeWhereTheyLive macaroni
+giveMeWhereTheyLive little
+giveMeWhereTheyLive galapagos
+
+
+galapagosPenguin galapagos
+galapagosPenguin macaroni
+
+antarticPenguin macaroni
+antarticPenguin galapagos
+
+antarcticOrGalapagos galapagos
+antarcticOrGalapagos macaroni
+
+
+tupleShuffle (1,2) (3,4)
+
+addEmUp (1, 2)
+addEmUpAlt (1, 2)
+
+fst3(1,2,3)
+third3(1,2,3)

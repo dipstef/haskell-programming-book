@@ -1,0 +1,8 @@
+-- Haskell Playground 1.0
+pure id <*> [1..5]
+pure id <*> Just "Hello Applicative"pure id <*> Nothingpure id <*> Left "Error'ish"pure id <*> Right 8001
+
+
+-- ((->) a) has an instancepure id <*> (+1) $ 2
+
+myResult

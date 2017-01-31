@@ -1,0 +1,6 @@
+-- Haskell Playground 1.0
+let x = 5 in x * x
+let x = 5; y = 6 in x * y
+let x = 3; y = 1000 in x + 3
+
+-- this should work in GHCilet x = 5; y = 6 in x * y

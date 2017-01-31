@@ -1,0 +1,2 @@
+-- Haskell Playground 1.0
+let trigger = undefined :: CountMe (Int, String, Int)quickBatch $ functor triggerquickBatch $ applicative triggerquickBatch $ monad trigger

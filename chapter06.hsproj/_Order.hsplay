@@ -1,0 +1,14 @@
+-- Haskell Playground 1.0
+compare 2 4
+compare 2 (-4)
+compare 2 2
+
+compare "Julie" "Chris"
+
+compare True False
+compare True True
+
+
+max [1, 2, 3, 4, 5] [3,4]
+
+compare Mon Tue

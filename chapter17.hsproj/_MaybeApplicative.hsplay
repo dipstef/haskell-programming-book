@@ -1,0 +1,23 @@
+-- Haskell Playground 1.0
+mkName "Babe"
+
+let maybeAddy = (mkAddress "old macdonald's")
+
+(fmap Person (mkName "Babe")) <*> maybeAddy
+
+Person <$> mkName "Babe" <*> maybeAddy
+
+Just (Person (Name "Babe")) <*> maybeAddy
+Just (Person (Name "Babe")) <*> Just (Address "old macdonald's")
+
+
+let cow1 = Cow <$> noEmpty "Bess"
+let cow2 = cow1 <*> noNegative 1
+let cow3 = cow2 <*> noNegative 2
+
+let cow1 = liftA3 Cow
+let cow2 = cow1 (noEmpty "blah")
+let cow3 = cow2 (noNegative 1)
+let cow4 = cow3 (noNegative 2)
+
+cow4

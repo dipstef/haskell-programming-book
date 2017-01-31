@@ -1,0 +1,23 @@
+-- Haskell Playground 1.0
+rollDieThreeTimes
+rollDieThreeTimes
+
+(mkStdGen 0)
+
+evalState rollDie (mkStdGen 0)
+
+evalState rollDieThreeTimes' (mkStdGen 0)
+
+take 6 $ evalState infiniteDie (mkStdGen 0)
+
+
+evalState (nDie 5) (mkStdGen 0)
+evalState (nDie 5) (mkStdGen 1)
+
+rollsToGetTwenty (mkStdGen 0)
+rollsToGetTwenty (mkStdGen 0)
+
+-- We can also use randomIO, which uses IO to get a new value
+-- each time without needing to create a unique value for the StdGen:
+(rollsToGetTwenty . mkStdGen) <$> randomIO
+(rollsToGetTwenty . mkStdGen) <$> randomIO

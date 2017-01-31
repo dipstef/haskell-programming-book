@@ -1,0 +1,10 @@
+-- Haskell Playground 1.0
+Age 12
+
+fromNumber 12
+
+sumNumberish (Age 20) (Age 12)
+
+sumNumberish (fromNumber 20) (Age 12)
+
+sumNumberish (fromNumber 20) (fromNumber 12)

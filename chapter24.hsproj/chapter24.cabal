@@ -1,0 +1,24 @@
+name: chapter24
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 7.10.3-5.18-2
+x-last-ide-version: HfM1.3.2
+Executable chapter24
+  main-is: Chapter24.hs
+  buildable: True
+  build-depends:
+      bytestring -any,
+      trifecta -any,
+      raw-strings-qq -any,
+      text -any,
+      base -any,
+      containers -any,
+      hspec -any
+  other-modules:
+      IniParser
+      Quasimodo
+      AltParsing
+      TextFractions

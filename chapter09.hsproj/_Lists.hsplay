@@ -1,0 +1,43 @@
+-- Haskell Playground 1.0
+myHead [1,2,3]
+myTal [1,2,3]
+
+[ x^2 | x <- [1..10]]
+
+[ x^2 | x <- [1..10], rem x 2 == 0]
+
+[x^y | x <- [1..5], y <- [2, 3]]
+
+
+[x^y | x <- [1..10], y <- [2, 3], x^y < 200][(x, y) | x <- [1, 2, 3], y <- [6, 7]]
+
+[(x, y) | x <- [1, 2, 3], y <- ['a', 'b']]
+
+[x | x <- "Three Letter Acronym", elem x ['A'..'Z']]
+
+
+
+acro "Fun Creative Knoweldge"
+
+
+map (+1) [1, 2, 3, 4]fmap (+1) [1, 2, 3, 4]
+
+filter even [1..10]
+filter' even [1..10]
+
+
+filter' (== 'a') "abracadabra"
+
+zip [1, 2] [4, 5, 6]
+
+zip [1, 2, 3] [4]
+
+zip [] [1..1000000000000000000]
+
+zip [1, 2, 3] [4, 5, 6]
+unzip $ zip [1, 2, 3] [4, 5, 6]
+
+
+zipWith (+) [1, 2, 3] [10, 11, 12]
+zipWith (*) [1, 2, 3] [10, 11, 12]
+

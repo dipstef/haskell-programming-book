@@ -1,0 +1,11 @@
+-- Haskell Playground 1.0
+quickCheck $ \x -> functorIdentity (x :: [Int])
+
+let li x = functorCompose (+1) (*2) (x :: [Int])
+
+quickCheck li
+
+type IntToInt = Fun Int Int
+type IntFC = [Int] -> IntToInt -> IntToInt -> Bool
+
+quickCheck (functorCompose' :: IntFC)

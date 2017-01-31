@@ -1,0 +1,21 @@
+-- Haskell Playground 1.0
+import Control.Applicative
+
+let (<||>) = liftA2 (||)
+
+let f 9001 = True; f _ = False
+let g 42 = True; g _ = False
+
+f 42
+f 9001
+
+g 42
+g 9001
+
+
+(\n -> f n || g n) 0
+(\n -> f n || g n) 9001
+(\n -> f n || g n) 42
+
+(f <||> g) 9001
+(f <||> g) 42

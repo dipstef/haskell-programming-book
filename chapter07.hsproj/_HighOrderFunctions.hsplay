@@ -1,0 +1,26 @@
+-- Haskell Playground 1.0
+let fSub = flipFun (-)
+
+fSub 1 10
+
+let fSub = myFlip (-)
+
+fSub 1 10
+
+returnLast 1 2 3 4
+
+returnLast' 1 2 3 4
+
+let foo = returnAfterApply (\x -> x + 1)
+
+foo 1 2
+
+reportBoss Manager Coder
+
+employeeRank Manager Coder
+employeeRank Coder Manager
+employeeRank Coder Coder
+
+employeeRank' compare Manager Coder
+
+employeeRank' codersRuleCEOsDrool Coder CEO

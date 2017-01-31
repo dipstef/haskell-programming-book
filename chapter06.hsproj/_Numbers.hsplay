@@ -1,0 +1,18 @@
+-- Haskell Playground 1.0
+{- Exercise: 
+   
+   Tuple Experiment Look at the types given for quotRem and divMod. What do you think those functions do? Test your hy- potheses by playing with them in the REPL. We’ve given you a sample to start with below  -}
+   
+let ones x = snd (divMod x 10)
+
+divMod 31 10
+quotRem 10 3
+
+divMod 20 (-3)
+quotRem 20 (-3)
+
+divMod (-21) 10
+quotRem (-22) 10
+
+divideThenAdd 31 14.4752089
+
